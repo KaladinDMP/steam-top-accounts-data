@@ -32,15 +32,15 @@ jobs:
     
     - name: Update README
       run: |
-        cat > README.md << 'EOF'
+        cat > README.md << EOF
         # Top Steam Accounts by Game Count
         
         This repository contains the top 20 Steam accounts ranked by number of games owned.
         
         ## Files
         
-        - `steam_ids_only.txt` - Just the Steam ID 64s, one per line
-        - `top_steam_accounts.json` - Full profile data
+        - \`steam_ids_only.txt\` - Just the Steam ID 64s, one per line
+        - \`top_steam_accounts.json\` - Full profile data
         
         ## Last Updated
         
@@ -53,24 +53,24 @@ jobs:
         
         ## Using This Data
         
-        You can download the `steam_ids_only.txt` file directly:
-        ```
+        You can download the \`steam_ids_only.txt\` file directly:
+        \`\`\`
         https://raw.githubusercontent.com/${{ github.repository }}/main/steam_ids_only.txt
-        ```
+        \`\`\`
         
         Or use it in your script:
-        ```python
+        \`\`\`python
         import requests
         
         # Download the file
         url = "https://raw.githubusercontent.com/${{ github.repository }}/main/steam_ids_only.txt"
         response = requests.get(url)
-        steam_ids = response.text.strip().split('\n')
+        steam_ids = response.text.strip().split('\\n')
         
         # Process the IDs
         for steam_id in steam_ids:
             print(f"Processing: {steam_id}")
-        ```
+        \`\`\`
         EOF
     
     - name: Commit and push changes
