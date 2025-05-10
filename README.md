@@ -1,4 +1,4 @@
-# SteamLadder Top (Steam) Accounts Data Script
+# SteamLadder Top Games Script
 
 This script fetches the top 20 Steam accounts with the most games using the SteamLadder API.
 
@@ -85,4 +85,3 @@ The SteamLadder API has a rate limit of 1000 requests per hour for your API key.
 ## Credits
 
 This script uses the [SteamLadder API](https://steamladder.com/). Make sure to add a link to SteamLadder.com if you use this data in your projects.
-
