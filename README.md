@@ -9,7 +9,7 @@ This repository contains the top 20 Steam accounts ranked by number of games own
 
 ## Last Updated
 
-Sun Jun  7 06:23:22 UTC 2026
+Sun Jun 14 06:39:18 UTC 2026
 
 ## Note
 
